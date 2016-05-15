@@ -1,0 +1,57 @@
+{
+  "name": "polymer-test",
+  "version": "1.0.0",
+  "description": "testing polymer angular browserify and gulp workflow",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "start": "gulp default"
+  },
+  "author": "TechNinja | Web & IT",
+  "license": "SEE LICENSE IN ./license.file",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "gulp-concat": "^2.6.0",
+    "jquery": "^2.2.2",
+    "run-sequence": "^1.1.5",
+    "toastr": "^2.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel": "^6.5.2",
+    "bower": "^1.7.7",
+    "browser-sync": "^2.11.2",
+    "browserify": "^13.0.0",
+    "browserify-shim": "^3.8.12",
+    "debowerify": "^1.4.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-protractor": "^2.3.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-vulcanize": "^6.1.0",
+    "rename": "^1.0.3",
+    "require-dir": "^0.3.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "../node_modules/jquery/dist/jquery.js",
+    "toastr": "../node_modules/toastr/build/toastr.min.js"
+  },
+  "browserify-shim": "./gulp/browserify.shim.js"
+}
