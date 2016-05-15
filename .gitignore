@@ -40,10 +40,14 @@ node_modules
 
 ### Bower ###
 scripts
-www/vendor
-www/.bower-cache
-www/.bower-registry
-www/.bower-tmp
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+### Sass ###
+.sass-cache
 
 ### Custom Modules ###
 private
+build

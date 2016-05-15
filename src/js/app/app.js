@@ -1,11 +1,11 @@
 var _const = require('../../../private/constants.js');
-console.log("Constants namespace", _const);
+
 var app = angular.module( _const.namespace, [
 		require('./debugger/debugger.directive.js').name,
 		require('angular-ui-router'),
 		require('angular-resource')
 	])
-	.controller('main', ['$scope', function($scope){
+	.controller('mainCtrl', ['$scope', function($scope){
 		$scope.message = "";
 }])
 	.run(['$rootScope', '$state', '$window', function($rootScope, $state, $window){

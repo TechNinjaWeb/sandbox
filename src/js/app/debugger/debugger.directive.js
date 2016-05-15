@@ -24,7 +24,7 @@ module.exports = app = angular.module(_const.namespace + '.debugger', [])
 				// Deinfe a debug object
 				self.debug = {};
 				// On or off
-				self.debug.on = false;
+				self.debug.on = true;
 				// Define a message
 				self.debug.message = "App is running";
 				self.debug.status = "Loaded Run Sequence";
