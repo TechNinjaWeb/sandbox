@@ -1,4 +1,6 @@
-var angular = require('angular'),
-	app = require('./app/app.js');
-// console.log("If this shows angular, then it's mondo cool!", app);
+// Base Requires
+require('angular');
+// Load App
+var app = require('./app/app.js');
+// Bootstrap App To Dom
 angular.bootstrap(document, [app.name]);
